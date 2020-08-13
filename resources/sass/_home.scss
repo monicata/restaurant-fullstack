@@ -1,5 +1,7 @@
 
 .welcome-jumbo{
+    transform: translate3d(300px, 0, 0);
+
     max-width: calc(100vw - 350px);
     display: flex;
     flex-direction: column;
@@ -50,3 +52,213 @@
         }
      }   
 }
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 0px) and (max-width: 560px) {
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        line-height: 1.4;
+    }
+    #app-layout {
+        .side-menu {
+            display: none;
+        }
+        .welcome-jumbo{
+            width: 100%;
+            padding: 20px;
+            max-width: 100vw;
+            transform: translate3d(0,0,0);
+        }
+    }
+
+    #information {
+        grid-template-columns: 1fr;
+        grid-template-rows:  200px auto;
+        .info{
+            padding: 20px;
+            .about-link{
+                span{
+                    width: 50%;
+                }
+            }
+            .paragraphs{
+                grid-template-columns: 1fr;
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+
+    #food-preview{
+        padding: 20px;
+        width: 100%;
+        overflow: hidden;
+        .button-rounded{
+            margin-bottom: 2rem;
+        }
+        .container {
+            .left-btn{
+                left: -20px;
+            }
+            .right-btn{
+                right: -20px;
+            }
+
+            .container__food-slider{
+                .container__sliding-system{
+                    .container__slide{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        h2{
+            font-size: 2rem;
+            line-height: 1.4;
+        }
+      
+    }
+ }
+
+ //mid-small devices 
+
+ @media (min-width: 561px) and (max-width: 767px) {
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        line-height: 1.4;
+    }
+    #app-layout {
+        .side-menu {
+            display: none;
+        }
+        .welcome-jumbo{
+            width: 100%;
+            padding: 20px;
+            max-width: 100vw;
+            transform: translate3d(0,0,0);
+        }
+    }
+
+    #information {
+        grid-template-columns: 1fr;
+        grid-template-rows:  200px auto;
+        .info{
+            padding: 20px;
+            .about-link{
+                span{
+                    width: 50%;
+                }
+            }
+            .paragraphs{
+                grid-template-columns: 1fr;
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+    }
+
+    #food-preview{
+        padding: 20px;
+        width: 100%;
+        overflow: hidden;
+        .button-rounded{
+            margin-bottom: 2rem;
+        }
+        .container {
+            .left-btn{
+                left: -20px;
+            }
+            .right-btn{
+                right: -20px;
+            }
+
+            
+                .container__food-slider{
+                    .container__sliding-system{
+                        width: 100%;
+                    }
+                }
+            
+        }
+        h2{
+            font-size: 2rem;
+            line-height: 1.4;
+        }
+        
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+
+    #app-layout {
+        .side-menu {
+            display: none;
+        }
+        .welcome-jumbo{
+            width: 100%;
+            padding: 20px;
+            max-width: 100vw;
+            transform: translate3d(0,0,0);
+        }
+    }
+
+    #information {
+        grid-template-columns: 1fr;
+        grid-template-rows:  400px auto;
+        .info{
+            padding: 20px;
+            .about-link{
+                span{
+                    width: 50%;
+                }
+            }
+            .paragraphs{
+                grid-template-columns: 50% 50%;
+              
+            }
+        }
+
+    }
+
+    #food-preview{
+        padding: 20px;
+        width: 100%;
+        overflow: hidden;
+        .container {
+            .left-btn{
+                left: -20px;
+            }
+            .right-btn{
+                right: -20px;
+            }
+            .container{
+                .container__food-slider{
+                    .container__sliding-system{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+        h2{
+            font-size: 2rem;
+            line-height: 1.4;
+        }
+  
+    }
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {  }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px)  { }
